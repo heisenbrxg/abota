@@ -1,35 +1,4 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "**/*.html",
-            "use": "@vercel/static"
-        },
-        {
-            "src": "assets/**",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/index.html"
-        },
-        {
-            "src": "/boardmembers",
-            "dest": "/boardmembers.html"
-        },
-        {
-            "src": "/contact",
-            "dest": "/contact-2.html"
-        },
-        {
-            "src": "/join-association",
-            "dest": "/join-association.html"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/$1"
-        }
-    ]
+    "cleanUrls": true,
+    "trailingSlash": false
 }
